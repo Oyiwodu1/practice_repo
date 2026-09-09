@@ -11,11 +11,13 @@ print(multiply_numbers(2, 3, 4, 5))
 def print_profile(**kwargs):  #kwargs(keyword arguement**; collect keyword arguement into a dictionary)
     result = ", ".join(f"{key}: {value}" for key, value in kwargs.items())
     print(result)
-    print(fname)
-
+    print(type(kwargs))
 print_profile(name="Alice", role="Developer")
 print_profile(name="Favour", role="engineer")
 print_profile(name="Faith", age=20, country="Nigeria")
+print("Type:", type(print_profile)) 
+print(fname)
+
 
 
 ggg = " / ".join(["name: Alice", "role: Developer"])  #using the .join keyword to convert multiple string to one string 
@@ -23,3 +25,12 @@ print(ggg)
 
 result = ", ".join(["favour", "peace", fname])
 print(result)
+
+
+def my_function(*args):
+  print("Type:", type(args))
+  print("First argument:", args[0])
+  print("Second argument:", args[1])
+  print("All arguments:", args)
+
+my_function("Emil", "Tobias", "Linus") 
