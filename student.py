@@ -18,10 +18,3 @@ for student in school:
     else:
         print("status: FAIL")
 
-def calculate_result(*score):
-    Total = 0
-    for num in score:
-        Total += num
-    Average = Total / len(score)
-    return Total, Average
-calculate_result(40, 77, 85)
