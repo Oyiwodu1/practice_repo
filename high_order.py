@@ -20,4 +20,4 @@ def outer():
         print("Hello Faith")
     return inner
 result = outer()
-result() 
+result()    # A function returns another function
