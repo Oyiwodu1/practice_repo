@@ -1,3 +1,5 @@
+# A dictionary is a collection of data stored as key-value pairs, 
+# where each key is used to access its corresponding value.
 student = {
     "name": "Faith",
     "age": 25,

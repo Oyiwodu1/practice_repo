@@ -14,3 +14,7 @@ for item in student.values():
 # using .items() to get both key and value together
 for item in student.items():
     print(item)
+
+# Python lets us unpack each pair into two variables:
+for key, value in student.items():
+    print(f"{key}: {value}")
