@@ -35,3 +35,12 @@ prices = [1000, 2500, 500, 3000, 1500]
 for amount in prices:
     if amount > 1000:
         print(amount + 500)
+
+scores = [40, 75, 60, 90, 35]
+total = sum(scores)
+count = len(scores)
+average = total / count
+print(min(scores))
+print(max(scores))
+print(sum(scores))
+print(average)

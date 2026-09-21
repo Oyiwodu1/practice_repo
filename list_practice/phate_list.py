@@ -7,7 +7,8 @@ fruits.append("watermelon")  # .append() helps us to add an element at the end o
 fruits.remove("Mango")   # .remove() helps to remove an element by value
 fruits.pop(0)   # .pop() removes an item acording to the index number
 
-fruits.sort()  # .sort() rearranges the list into ascending order — smallest to largest.
+# .sort() rearranges the list into ascending order — smallest to largest.
+fruits.sort() 
 print(fruits)
 for fruit in fruits:
     print(fruit)

@@ -22,4 +22,7 @@ more_fruits = ["orange", "banana"]
 fruits.extend(more_fruits)
 print(fruits)
 
-.reverse() 
+# .reverse() changes the order of the  list so the last item becomes first.
+letters = ["A", "B", "C", "D"]
+letters.reverse()
+print(letters)
