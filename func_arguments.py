@@ -8,7 +8,7 @@ def multiply_numbers(*args):  #arg(non keyword arguement*; This function can rec
 print(multiply_numbers(2, 3))      
 print(multiply_numbers(2, 3, 4, 5))  
 
-def print_profile(**kwargs):  #kwargs(keyword arguement**; collect keyword arguement into a dictionary)
+def print_profile(**kwargs):  #kwargs(keyword arguement**; collect multiple keyword arguement into a dictionary)
     result = ", ".join(f"{key}: {value}" for key, value in kwargs.items())
     print(result)
     print(type(kwargs))

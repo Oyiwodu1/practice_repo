@@ -19,6 +19,8 @@ animals = {"cat", "dog", "rabbit"}
 animals.remove("dog")
 print(animals)
 
+# .discard() → simply does nothing if the value isn't there.
+
 #  3 SET OPERATIONS
 # set1.union(set2): Union combines the values from both sets, removing duplicates.
 A = {"apple", "banana", "orange"}
