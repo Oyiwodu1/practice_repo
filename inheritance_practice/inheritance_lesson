@@ -1,0 +1,5 @@
+Parent class — the class being inherited from.
+Child class — inherits from the parent.
+Inherited methods/attributes — the child can use what the parent provides.
+super() — asks the parent to handle its own initialization/behavior.
+Method overriding — the child creates its own version of a parent's method.
