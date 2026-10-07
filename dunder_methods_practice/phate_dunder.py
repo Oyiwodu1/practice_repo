@@ -67,3 +67,25 @@ class Money:
 money1 = Money(4000)
 money2 = Money(900)
 print(money1 + money2)
+
+# __lt__ controls < between objects / object1 < object2
+
+class Student:
+    def __init__(self, score):
+        self.score = score
+    def __lt__(self, other):
+        return self.score < other.score
+student1 = Student(20)
+student2 = Student(50)
+print(student1 < student2)
+
+# __gt__ controls > between objects / object1 > object2
+
+class Student:
+    def __init__(self, score):
+        self.score = score
+    def __gt__(self, other):
+        return self.score > other.score
+student1 = Student(60)
+student2 = Student(20)
+print(student1 > student2)
