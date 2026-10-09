@@ -89,3 +89,25 @@ class Student:
 student1 = Student(60)
 student2 = Student(20)
 print(student1 > student2)
+
+# __le__ controls <= between objects / object1 <= object2
+
+class Student:
+    def __init__(self, score):
+        self.score = score
+    def __le__(self, other):
+        return self.score <= other.score
+student1 = Student(20)
+student2 = Student(76)
+print(student2 <= student1)
+
+# __ne__ not equal to / object1 != object2
+
+class Student:
+    def __init__(self, score):
+        self.score = score
+    def __ne__(self, other):
+        return self.score != other.score
+student1 = Student(8)
+student2 = Student(0)
+print(student1 != student2)
