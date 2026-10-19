@@ -7,7 +7,9 @@ result("Faith")
 
 def double(num):
     return num * 2
+print(double(7))
 
 def run_operation(double):
     print(double(10))
 run_operation(double)   # Passing a function as an argument
+ 

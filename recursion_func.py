@@ -27,8 +27,8 @@ def add_down(n):
     if n == 0:
         return 0      # base case / stop
     return n + add_down(n - 1)   
-add_down(4)
-print(add_down(4))
+add_down(5)
+print(add_down(5))
 print()
 
 def print_string(word, index):
