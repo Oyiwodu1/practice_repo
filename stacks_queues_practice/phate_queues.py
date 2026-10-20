@@ -25,10 +25,9 @@ queue.append("Grace")
 print(queue.pop(0))
 
 queue = ["Faith", "Joy", "Grace"]
-
 served1 = queue.pop(0)
 served2 = queue.pop(0)
-
-print(served1)
+print(served)
 print(served2)
 print(queue)
+
