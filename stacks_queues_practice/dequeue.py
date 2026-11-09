@@ -23,3 +23,24 @@ print()
 queue2 = deque(["Ada", "John"])
 queue2.extend(["Faith", "Grace"]) 
 print(queue2)
+
+print()
+# clear() — emptying a queue - It does not delete the queue variable.
+# - The queue still exists, but it is empty.
+# - You can add new items to it afterward.
+queue = deque(["Ada", "John", "Faith"])
+queue.clear()
+print(queue)
+queue.append("Grace")
+print(queue)
+
+print()
+# count() — counting occurrences. how many times a particular item appears
+queue = deque(["Ada", "John", "Ada", "Faith", "Ada"])
+print(queue.count("Ada"))
+
+print()
+# remove() — removing a specific item and if there's any duplicate, it removes the first occurrence
+queue = deque(["Ada", "John", "Faith", "Grace", "John"])
+queue.remove("John")
+print(queue)
