@@ -27,7 +27,10 @@ print(queue.pop(0))
 queue = ["Faith", "Joy", "Grace"]
 served1 = queue.pop(0)
 served2 = queue.pop(0)
-print(served)
+print(served1)
 print(served2)
 print(queue)
 
+# peeking: viewing an item in the queue
+queues = ["Ada", "Joy", "Favour"]
+print(queues[0])
