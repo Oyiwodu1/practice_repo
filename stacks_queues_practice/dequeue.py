@@ -1,4 +1,4 @@
-#  DEQUEUE => double ended queue
+#  DEQUE => double ended queue
 from collections import deque
 
 queue = deque(["Faith", "Ada", "John"])
@@ -43,4 +43,22 @@ print()
 # remove() — removing a specific item and if there's any duplicate, it removes the first occurrence
 queue = deque(["Ada", "John", "Faith", "Grace", "John"])
 queue.remove("John")
+print(queue)
+
+print()
+# rotate() — moves items from one end of the deque to the other
+queue = deque(["Ada", "John", "Faith", "Grace"])
+queue.rotate(2) #A positive rotation moves items from the right (back) to the left (front).
+print(queue)
+queue = deque(["Ada", "John", "Faith", "Grace"])
+queue.rotate(-1)
+print(queue)
+
+print()
+# : maxlen — setting a maximum queue size
+queue = deque(maxlen=3)
+queue.append("Ada")
+queue.append("John")
+queue.append("Faith")
+queue.append("Grace")
 print(queue)
