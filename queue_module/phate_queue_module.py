@@ -41,7 +41,7 @@ orders.task_done()
 # Handling an empty queue
 customers = queue.Queue()
 try:
-    customer = customers.get(block=False)
+    customer = customers.get_nowait()
     print(customer)
 except queue.Empty:
     print("No customers are waiting.")

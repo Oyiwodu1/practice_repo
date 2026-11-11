@@ -24,3 +24,15 @@ orders.join()
 print("All orders completed!")
 # Very important: If you retrieve an item using get() but forget to call task_done(), 
 # join() may wait forever because Python still considers that task unfinished.
+
+
+customers = queue.Queue()
+customers.put("rice")
+customer = customers.get_nowait()
+print(customer)
+
+
+customers = queue.Queue(maxsize=2)
+customers.put_nowait("Ada")
+customers.put_nowait("John")
+print(customers.qsize())
